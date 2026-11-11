@@ -1,0 +1,10 @@
+{
+  "name": "J.A.R.V.I.S. Iron Man OS",
+  "description": "Stark Industries holographic AI assistant (J.A.R.V.I.S.) featuring holographic HUD, Arc Reactor diagnostics, voice synthesis, armor telemetry, defense protocols, and Android APK / PWA installability.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

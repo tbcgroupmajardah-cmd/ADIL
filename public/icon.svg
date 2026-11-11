@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="waterGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="25%" stop-color="#38bdf8" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#0284c7" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#040911" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="dropGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#38bdf8"/>
+      <stop offset="75%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="asGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Deep Obsidian Cyber Canvas -->
+  <rect width="512" height="512" fill="#040911" rx="100" />
+
+  <!-- Outer Concentric Arc Rings with Hydro Ripple Dash -->
+  <circle cx="256" cy="256" r="215" fill="none" stroke="#00e5ff" stroke-width="4" opacity="0.4" stroke-dasharray="16 8" />
+  <circle cx="256" cy="256" r="195" fill="none" stroke="#38bdf8" stroke-width="3" opacity="0.75" />
+  <circle cx="256" cy="256" r="175" fill="none" stroke="#0284c7" stroke-width="2" opacity="0.6" stroke-dasharray="32 12" />
+
+  <!-- Radial Coils / Arc Emitters -->
+  <g stroke="#00f5ff" stroke-width="6" opacity="0.85">
+    <line x1="256" y1="50" x2="256" y2="90" />
+    <line x1="402" y1="110" x2="374" y2="138" />
+    <line x1="462" y1="256" x2="422" y2="256" />
+    <line x1="402" y1="402" x2="374" y2="374" />
+    <line x1="256" y1="462" x2="256" y2="422" />
+    <line x1="110" y1="402" x2="138" y2="374" />
+    <line x1="50" y1="256" x2="90" y2="256" />
+    <line x1="110" y1="110" x2="138" y2="138" />
+  </g>
+
+  <!-- Hydro Dynamic Waves inside Arc Chamber -->
+  <circle cx="256" cy="256" r="140" fill="url(#waterGlow)" />
+  <circle cx="256" cy="256" r="130" fill="none" stroke="#00e5ff" stroke-width="5" filter="url(#glow)" />
+  <circle cx="256" cy="256" r="105" fill="none" stroke="#67e8f9" stroke-width="2.5" opacity="0.8" stroke-dasharray="20 10" />
+
+  <!-- The Hydro Arc Water Drop Core (Water Droplet Silhouette) -->
+  <path d="M256,120 C256,120 340,230 340,290 C340,336 302,370 256,370 C210,370 172,336 172,290 C172,230 256,120 256,120 Z"
+        fill="url(#dropGrad)"
+        filter="url(#glow)"
+        opacity="0.9" />
+
+  <!-- Water Caustic Reflection Highlights -->
+  <path d="M256,145 C256,145 316,238 316,285 C316,322 288,350 256,350 C246,350 236,346 226,340 C242,332 254,316 254,295 C254,270 230,250 230,225 C230,195 256,145 256,145 Z"
+        fill="#ffffff"
+        opacity="0.35" />
+
+  <!-- INSIDE "AS" SYMBOL (Adil & Sahal Cyber Monogram) -->
+  <g id="as-symbol" filter="url(#glow)">
+    <!-- Letter 'A' -->
+    <path d="M216,330 L248,195 L272,195 L304,330 L278,330 L270,296 L244,296 L236,330 Z M249,274 L265,274 L257,236 Z"
+          fill="none"
+          stroke="#040911"
+          stroke-width="12"
+          stroke-linejoin="round" />
+    <path d="M216,330 L248,195 L272,195 L304,330 L278,330 L270,296 L244,296 L236,330 Z M249,274 L265,274 L257,236 Z"
+          fill="#040911"
+          opacity="0.8" />
+    <path d="M216,330 L248,195 L272,195 L304,330 L278,330 L270,296 L244,296 L236,330 Z M249,274 L265,274 L257,236 Z"
+          fill="url(#asGold)" />
+
+    <!-- Letter 'S' Intertwined Across Center -->
+    <path d="M294,222 C285,212 270,206 254,206 C232,206 218,218 218,234 C218,252 234,260 252,266 C274,274 290,282 290,302 C290,322 272,336 248,336 C230,336 214,328 206,316 L224,302 C230,312 240,318 250,318 C262,318 272,312 272,302 C272,286 254,278 238,272 C220,264 204,254 204,234 C204,212 224,194 252,194 C268,194 282,200 292,210 Z"
+          fill="none"
+          stroke="#040911"
+          stroke-width="10"
+          stroke-linejoin="round" />
+    <path d="M294,222 C285,212 270,206 254,206 C232,206 218,218 218,234 C218,252 234,260 252,266 C274,274 290,282 290,302 C290,322 272,336 248,336 C230,336 214,328 206,316 L224,302 C230,312 240,318 250,318 C262,318 272,312 272,302 C272,286 254,278 238,272 C220,264 204,254 204,234 C204,212 224,194 252,194 C268,194 282,200 292,210 Z"
+          fill="#ffffff" />
+  </g>
+
+  <!-- Water Ripple Rings at Base -->
+  <ellipse cx="256" cy="392" rx="85" ry="14" fill="none" stroke="#38bdf8" stroke-width="3" opacity="0.7" />
+  <ellipse cx="256" cy="406" rx="115" ry="18" fill="none" stroke="#0284c7" stroke-width="2" opacity="0.45" stroke-dasharray="14 7" />
+
+  <!-- Center Focal Spark -->
+  <circle cx="256" cy="265" r="5" fill="#ffffff" filter="url(#glow)" />
+
+  <!-- Branding Text -->
+  <text x="256" y="478" text-anchor="middle" fill="#00e5ff" font-family="'Orbitron', sans-serif" font-weight="900" font-size="22" letter-spacing="8">ADIL • SAHAL</text>
+</svg>
